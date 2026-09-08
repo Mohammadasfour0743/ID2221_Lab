@@ -23,3 +23,8 @@ spark-env/
 # OS
 .DS_Store
 Thumbs.db
+
+
+#datasets
+dataset/
+
