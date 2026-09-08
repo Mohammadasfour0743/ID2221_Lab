@@ -15,10 +15,13 @@ spark-env/
 # PySpark / Spark
 .sparkStaging/
 
+# Delta Lake
+delta/
 
 # IDE
 .vscode/
 .idea/
+
 
 # OS
 .DS_Store
