@@ -1,0 +1,29 @@
+I am using WSL on windows. you can also just use a virtual machine or a normal Linux PC. I recommend using WSL and not running on normal windows because you'll have to do a lot of weird things (or at least that's what i experienced).
+
+-If using WSL, I recommend you go to the Linux directory and not windows (not dektop). Put the Repo there
+
+
+
+-In WSL/linux terminal, first download python and jdk (if you dont have them): 
+sudo apt install -y python3 python3-pip python3-venv openjdk-11-jdk 
+
+-Then create a virtual env and activate:
+python3 -m venv spark-env
+source spark-env/bin/activate
+
+-Install the python packages. Be sure to have the same name since it breaks if versions are different. Also this command downloads jupyter nb (thought it would be better for such tasks):
+pip install jupyter ipykernel pyspark==3.5.6 delta-spark==3.2.0
+
+-something something jupyter kernel:
+python -m ipykernel install --user --name spark-env --display-name "Python (spark-env)"
+
+
+-To launch jupyter:
+jupyter notebook --no-browser
+then open the provided link in browser
+
+
+-Everytime you want to work on the project:
+--Navigate to repo
+--source spark-env/bin/activate 
+--jupyter notebook --no-browser
