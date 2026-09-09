@@ -1,0 +1,232 @@
+{
+    "weather": {
+        "format": "csv",
+        "path": "datasets/weather.csv",
+        "primary_keys": [
+            "year",
+            "month",
+            "day",
+            "hour"
+        ],
+        "timestamp_cols": {},
+        "assembled_timestamp": {
+            "year_col": "year",
+            "month_col": "month",
+            "day_col": "day",
+            "hour_col": "hour",
+            "output_col": "timestamp"
+        },
+        "date_time_pairs": [],
+        "bool_cols": [],
+        "options": {
+            "header": "true"
+        },
+        "schema": {
+            "year": "integer",
+            "month": "integer",
+            "day": "integer",
+            "hour": "integer",
+            "temp": "double",
+            "temp_source": "string",
+            "rhum": "double",
+            "rhum_source": "string",
+            "prcp": "double",
+            "prcp_source": "string",
+            "snwd": "double",
+            "snwd_source": "string",
+            "wdir": "double",
+            "wdir_source": "string",
+            "wspd": "double",
+            "wspd_source": "string",
+            "wpgt": "double",
+            "wpgt_source": "string",
+            "pres": "double",
+            "pres_source": "string",
+            "cldc": "double",
+            "cldc_source": "string",
+            "coco": "double",
+            "coco_source": "string"
+        }
+    },
+    "taxi_trips_01": {
+        "format": "parquet",
+        "path": "datasets/yellow_tripdata_2024-01.parquet",
+        "primary_keys": [],
+        "timestamp_cols": {
+            "tpep_pickup_datetime": "yyyy-MM-dd HH:mm:ss",
+            "tpep_dropoff_datetime": "yyyy-MM-dd HH:mm:ss"
+        },
+        "assembled_timestamp": null,
+        "date_time_pairs": [],
+        "bool_cols": [
+            "store_and_fwd_flag"
+        ],
+        "options": {},
+        "schema": {
+            "VendorID": "long",
+            "tpep_pickup_datetime": "timestamp",
+            "tpep_dropoff_datetime": "timestamp",
+            "passenger_count": "double",
+            "trip_distance": "double",
+            "RatecodeID": "double",
+            "store_and_fwd_flag": "string",
+            "PULocationID": "long",
+            "DOLocationID": "long",
+            "payment_type": "long",
+            "fare_amount": "double",
+            "extra": "double",
+            "mta_tax": "double",
+            "tip_amount": "double",
+            "tolls_amount": "double",
+            "improvement_surcharge": "double",
+            "total_amount": "double",
+            "congestion_surcharge": "double",
+            "airport_fee": "double"
+        }
+    },
+    "taxi_trips_02": {
+        "format": "parquet",
+        "path": "datasets/yellow_tripdata_2024-02.parquet",
+        "primary_keys": [],
+        "timestamp_cols": {
+            "tpep_pickup_datetime": "yyyy-MM-dd HH:mm:ss",
+            "tpep_dropoff_datetime": "yyyy-MM-dd HH:mm:ss"
+        },
+        "assembled_timestamp": null,
+        "date_time_pairs": [],
+        "bool_cols": [
+            "store_and_fwd_flag"
+        ],
+        "options": {},
+        "schema": {
+            "VendorID": "long",
+            "tpep_pickup_datetime": "timestamp",
+            "tpep_dropoff_datetime": "timestamp",
+            "passenger_count": "double",
+            "trip_distance": "double",
+            "RatecodeID": "double",
+            "store_and_fwd_flag": "string",
+            "PULocationID": "long",
+            "DOLocationID": "long",
+            "payment_type": "long",
+            "fare_amount": "double",
+            "extra": "double",
+            "mta_tax": "double",
+            "tip_amount": "double",
+            "tolls_amount": "double",
+            "improvement_surcharge": "double",
+            "total_amount": "double",
+            "congestion_surcharge": "double",
+            "airport_fee": "double"
+        }
+    },
+    "taxi_trips_03": {
+        "format": "parquet",
+        "path": "datasets/yellow_tripdata_2024-03.parquet",
+        "primary_keys": [],
+        "timestamp_cols": {
+            "tpep_pickup_datetime": "yyyy-MM-dd HH:mm:ss",
+            "tpep_dropoff_datetime": "yyyy-MM-dd HH:mm:ss"
+        },
+        "assembled_timestamp": null,
+        "date_time_pairs": [],
+        "bool_cols": [
+            "store_and_fwd_flag"
+        ],
+        "options": {},
+        "schema": {
+            "VendorID": "long",
+            "tpep_pickup_datetime": "timestamp",
+            "tpep_dropoff_datetime": "timestamp",
+            "passenger_count": "double",
+            "trip_distance": "double",
+            "RatecodeID": "double",
+            "store_and_fwd_flag": "string",
+            "PULocationID": "long",
+            "DOLocationID": "long",
+            "payment_type": "long",
+            "fare_amount": "double",
+            "extra": "double",
+            "mta_tax": "double",
+            "tip_amount": "double",
+            "tolls_amount": "double",
+            "improvement_surcharge": "double",
+            "total_amount": "double",
+            "congestion_surcharge": "double",
+            "airport_fee": "double"
+        }
+    },
+    "taxi_zone_lookup": {
+        "format": "csv",
+        "path": "datasets/taxi_zone_lookup.csv",
+        "primary_keys": [
+            "location_id"
+        ],
+        "timestamp_cols": {},
+        "assembled_timestamp": null,
+        "date_time_pairs": [],
+        "bool_cols": [],
+        "options": {
+            "header": "true"
+        },
+        "schema": {
+            "LocationID": "integer",
+            "Borough": "string",
+            "Zone": "string",
+            "service_zone": "string"
+        }
+    },
+    "air_quality": {
+        "format": "csv",
+        "path": "datasets/air_quality.csv",
+        "primary_keys": [
+            "state_code",
+            "county_code",
+            "site_num",
+            "parameter_code",
+            "poc",
+            "date_local",
+            "time_local"
+        ],
+        "timestamp_cols": {},
+        "assembled_timestamp": null,
+        "date_time_pairs": [
+            {
+                "date_col": "date_local",
+                "time_col": "time_local",
+                "output_col": "datetime_local",
+                "format": "yyyy-MM-dd HH:mm"
+            }
+        ],
+        "bool_cols": [],
+        "options": {
+            "header": "true"
+        },
+        "schema": {
+            "State Code": "string",
+            "County Code": "string",
+            "Site Num": "string",
+            "Parameter Code": "string",
+            "POC": "integer",
+            "Latitude": "double",
+            "Longitude": "double",
+            "Datum": "string",
+            "Parameter Name": "string",
+            "Date Local": "string",
+            "Time Local": "string",
+            "Date GMT": "string",
+            "Time GMT": "string",
+            "Sample Measurement": "double",
+            "Units of Measure": "string",
+            "MDL": "double",
+            "Uncertainty": "double",
+            "Qualifier": "string",
+            "Method Type": "string",
+            "Method Code": "string",
+            "Method Name": "string",
+            "State Name": "string",
+            "County Name": "string",
+            "Date of Last Change": "string"
+        }
+    }
+}
