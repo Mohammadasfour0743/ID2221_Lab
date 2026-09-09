@@ -1,0 +1,357 @@
+{
+    "weather": {
+        "format": "csv",
+        "path": "datasets/weather.csv",
+        "primary_keys": [
+            "year",
+            "month",
+            "day",
+            "hour"
+        ],
+        "timestamp_cols": {},
+        "assembled_timestamp": {
+            "year_col": "year",
+            "month_col": "month",
+            "day_col": "day",
+            "hour_col": "hour",
+            "output_col": "timestamp"
+        },
+        "date_time_pairs": [],
+        "bool_cols": [],
+        "options": {
+            "header": "true"
+        },
+        "schema": {
+            "year": "integer",
+            "month": "integer",
+            "day": "integer",
+            "hour": "integer",
+            "temp": "double",
+            "temp_source": "string",
+            "rhum": "double",
+            "rhum_source": "string",
+            "prcp": "double",
+            "prcp_source": "string",
+            "snwd": "double",
+            "snwd_source": "string",
+            "wdir": "double",
+            "wdir_source": "string",
+            "wspd": "double",
+            "wspd_source": "string",
+            "wpgt": "double",
+            "wpgt_source": "string",
+            "pres": "double",
+            "pres_source": "string",
+            "cldc": "double",
+            "cldc_source": "string",
+            "coco": "double",
+            "coco_source": "string"
+        },
+        "expected_columns": [
+            "year",
+            "month",
+            "day",
+            "hour",
+            "temp",
+            "temp_source",
+            "rhum",
+            "rhum_source",
+            "prcp",
+            "prcp_source",
+            "snwd",
+            "snwd_source",
+            "wdir",
+            "wdir_source",
+            "wspd",
+            "wspd_source",
+            "wpgt",
+            "wpgt_source",
+            "pres",
+            "pres_source",
+            "cldc",
+            "cldc_source",
+            "coco",
+            "coco_source"
+        ]
+    },
+    "taxi_trips_01": {
+        "format": "parquet",
+        "path": "datasets/yellow_tripdata_2024-01.parquet",
+        "primary_keys": [],
+        "timestamp_cols": {
+            "tpep_pickup_datetime": "yyyy-MM-dd HH:mm:ss",
+            "tpep_dropoff_datetime": "yyyy-MM-dd HH:mm:ss"
+        },
+        "assembled_timestamp": null,
+        "date_time_pairs": [],
+        "bool_cols": [
+            "store_and_fwd_flag"
+        ],
+        "options": {},
+        "schema": {
+            "vendor_i_d": "long",
+            "tpep_pickup_datetime": "timestamp",
+            "tpep_dropoff_datetime": "timestamp",
+            "passenger_count": "double",
+            "trip_distance": "double",
+            "ratecode_i_d": "double",
+            "store_and_fwd_flag": "string",
+            "p_u_location_i_d": "long",
+            "d_o_location_i_d": "long",
+            "payment_type": "long",
+            "fare_amount": "double",
+            "extra": "double",
+            "mta_tax": "double",
+            "tip_amount": "double",
+            "tolls_amount": "double",
+            "improvement_surcharge": "double",
+            "total_amount": "double",
+            "congestion_surcharge": "double",
+            "airport_fee": "double"
+        },
+        "expected_columns": [
+            "VendorID",
+            "tpep_pickup_datetime",
+            "tpep_dropoff_datetime",
+            "passenger_count",
+            "trip_distance",
+            "RatecodeID",
+            "store_and_fwd_flag",
+            "PULocationID",
+            "DOLocationID",
+            "payment_type",
+            "fare_amount",
+            "extra",
+            "mta_tax",
+            "tip_amount",
+            "tolls_amount",
+            "improvement_surcharge",
+            "total_amount",
+            "congestion_surcharge",
+            "airport_fee"
+        ]
+    },
+    "taxi_trips_02": {
+        "format": "parquet",
+        "path": "datasets/yellow_tripdata_2024-02.parquet",
+        "primary_keys": [],
+        "timestamp_cols": {
+            "tpep_pickup_datetime": "yyyy-MM-dd HH:mm:ss",
+            "tpep_dropoff_datetime": "yyyy-MM-dd HH:mm:ss"
+        },
+        "assembled_timestamp": null,
+        "date_time_pairs": [],
+        "bool_cols": [
+            "store_and_fwd_flag"
+        ],
+        "options": {},
+        "schema": {
+            "vendor_i_d": "long",
+            "tpep_pickup_datetime": "timestamp",
+            "tpep_dropoff_datetime": "timestamp",
+            "passenger_count": "double",
+            "trip_distance": "double",
+            "ratecode_i_d": "double",
+            "store_and_fwd_flag": "string",
+            "p_u_location_i_d": "long",
+            "d_o_location_i_d": "long",
+            "payment_type": "long",
+            "fare_amount": "double",
+            "extra": "double",
+            "mta_tax": "double",
+            "tip_amount": "double",
+            "tolls_amount": "double",
+            "improvement_surcharge": "double",
+            "total_amount": "double",
+            "congestion_surcharge": "double",
+            "airport_fee": "double"
+        },
+        "expected_columns": [
+            "VendorID",
+            "tpep_pickup_datetime",
+            "tpep_dropoff_datetime",
+            "passenger_count",
+            "trip_distance",
+            "RatecodeID",
+            "store_and_fwd_flag",
+            "PULocationID",
+            "DOLocationID",
+            "payment_type",
+            "fare_amount",
+            "extra",
+            "mta_tax",
+            "tip_amount",
+            "tolls_amount",
+            "improvement_surcharge",
+            "total_amount",
+            "congestion_surcharge",
+            "airport_fee"
+        ]
+    },
+    "taxi_trips_03": {
+        "format": "parquet",
+        "path": "datasets/yellow_tripdata_2024-03.parquet",
+        "primary_keys": [],
+        "timestamp_cols": {
+            "tpep_pickup_datetime": "yyyy-MM-dd HH:mm:ss",
+            "tpep_dropoff_datetime": "yyyy-MM-dd HH:mm:ss"
+        },
+        "assembled_timestamp": null,
+        "date_time_pairs": [],
+        "bool_cols": [
+            "store_and_fwd_flag"
+        ],
+        "options": {},
+        "schema": {
+            "vendor_i_d": "long",
+            "tpep_pickup_datetime": "timestamp",
+            "tpep_dropoff_datetime": "timestamp",
+            "passenger_count": "double",
+            "trip_distance": "double",
+            "ratecode_i_d": "double",
+            "store_and_fwd_flag": "string",
+            "p_u_location_i_d": "long",
+            "d_o_location_i_d": "long",
+            "payment_type": "long",
+            "fare_amount": "double",
+            "extra": "double",
+            "mta_tax": "double",
+            "tip_amount": "double",
+            "tolls_amount": "double",
+            "improvement_surcharge": "double",
+            "total_amount": "double",
+            "congestion_surcharge": "double",
+            "airport_fee": "double"
+        },
+        "expected_columns": [
+            "VendorID",
+            "tpep_pickup_datetime",
+            "tpep_dropoff_datetime",
+            "passenger_count",
+            "trip_distance",
+            "RatecodeID",
+            "store_and_fwd_flag",
+            "PULocationID",
+            "DOLocationID",
+            "payment_type",
+            "fare_amount",
+            "extra",
+            "mta_tax",
+            "tip_amount",
+            "tolls_amount",
+            "improvement_surcharge",
+            "total_amount",
+            "congestion_surcharge",
+            "airport_fee"
+        ]
+    },
+    "taxi_zone_lookup": {
+        "format": "csv",
+        "path": "datasets/taxi_zone_lookup.csv",
+        "primary_keys": [
+            "location_id"
+        ],
+        "timestamp_cols": {},
+        "assembled_timestamp": null,
+        "date_time_pairs": [],
+        "bool_cols": [],
+        "options": {
+            "header": "true"
+        },
+        "schema": {
+            "location_i_d": "integer",
+            "borough": "string",
+            "zone": "string",
+            "service_zone": "string"
+        },
+        "expected_columns": [
+            "LocationID",
+            "Borough",
+            "Zone",
+            "service_zone"
+        ]
+    },
+    "air_quality": {
+        "format": "csv",
+        "path": "datasets/air_quality.csv",
+        "primary_keys": [
+            "state_code",
+            "county_code",
+            "site_num",
+            "parameter_code",
+            "poc",
+            "date_local",
+            "time_local"
+        ],
+        "timestamp_cols": {},
+        "assembled_timestamp": null,
+        "date_time_pairs": [
+            {
+                "date_col": "date_local",
+                "time_col": "time_local",
+                "output_col": "datetime_local",
+                "format": "yyyy-MM-dd HH:mm"
+            }
+        ],
+        "bool_cols": [],
+        "options": {
+            "header": "true"
+        },
+        "schema": {
+            "state_code": "string",
+            "county_code": "string",
+            "site_num": "string",
+            "parameter_code": "string",
+            "poc": "integer",
+            "latitude": "double",
+            "longitude": "double",
+            "datum": "string",
+            "parameter_name": "string",
+            "date_local": "string",
+            "time_local": "string",
+            "date_gmt": "string",
+            "time_gmt": "string",
+            "sample_measurement": "double",
+            "units_of_measure": "string",
+            "mdl": "double",
+            "uncertainty": "double",
+            "qualifier": "string",
+            "method_type": "string",
+            "method_code": "string",
+            "method_name": "string",
+            "state_name": "string",
+            "county_name": "string",
+            "date_of_last_change": "string"
+        },
+        "expected_columns": [
+            "State Code",
+            "County Code",
+            "Site Num",
+            "Parameter Code",
+            "POC",
+            "Latitude",
+            "Longitude",
+            "Datum",
+            "Parameter Name",
+            "Date Local",
+            "Time Local",
+            "Date GMT",
+            "Time GMT",
+            "Sample Measurement",
+            "Units of Measure",
+            "MDL",
+            "Uncertainty",
+            "Qualifier",
+            "Method Type",
+            "Method Code",
+            "Method Name",
+            "State Name",
+            "County Name",
+            "Date of Last Change"
+        ],
+        "string_cols": [
+            "time_local",
+            "time_gmt"
+        ]
+    }
+}
