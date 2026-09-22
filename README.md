@@ -1,6 +1,6 @@
 # ID2221_Lab
 
-This is the code for Lab1 of ID2221.
+These are instructions on how to run the code
 
 - It is recommended to use Linux/WSL
 
@@ -34,3 +34,7 @@ Everytime you want to work on the project:
 For the datasets, create a directory in the repo named datasets/ and add the datasets from [here](https://drive.google.com/drive/folders/1qjBtPVDepDE22j0axqrLVR0A2a969Qyy). Make sure to unzip the air_quality dataset and rename it to `air_quality.csv`.
 
 Then you can execute the cells to run the platform.
+
+- To run the queries, simply run the cells. Do not forget to run the ones that load the dataset. The dataset can be obtained by following intructions from week 1
+- To generate the analytical data products, run the cells in the section "Making analytical data objects"
+- To reproduce the benchmark results, run the cells in order until the "Evaluate platform" where the benchmarks are.
