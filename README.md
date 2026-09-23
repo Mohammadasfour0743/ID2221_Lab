@@ -50,6 +50,6 @@ Contains queries, data products, and benchmark code
 ## Week 3
 files: week3_task1.ipynb , week3_task2.ipynb, generate_updates.py
 
--  Use generate_updates.py to generate the extra datasets.
+-  Use generate_updates.py to generate the extra datasets(Run `python generate_updates.py`).
 -  Run week3_task1.ipynb to update the datasets with the new data. This will also create a json file pipeline_status.json that is used in the framework. If you want to re-run the whole code make sure to delete this file and generate a new one for a fresh test
-- For task 2, run week3_task2
+-  For task 2, run week3_task2
