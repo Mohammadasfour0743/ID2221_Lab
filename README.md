@@ -2,6 +2,7 @@
 
 These are instructions on how to run the code
 
+## Downloading libraries and dependancies
 - It is recommended to use Linux/WSL
 
 - In linux/WSL terminal, first download python and jdk (if you dont have them): 
@@ -31,10 +32,24 @@ Everytime you want to work on the project:
 - `source spark-env/bin/activate`
 - `jupyter notebook --no-browser`
 
-For the datasets, create a directory in the repo named datasets/ and add the datasets from [here](https://drive.google.com/drive/folders/1qjBtPVDepDE22j0axqrLVR0A2a969Qyy). Make sure to unzip the air_quality dataset and rename it to `air_quality.csv`.
+## Datasets
+For the datasets, create a directory in the root folder named datasets/ and add the datasets from [here](https://drive.google.com/drive/folders/1qjBtPVDepDE22j0axqrLVR0A2a969Qyy). Make sure to unzip the air_quality dataset and rename it to `air_quality.csv`.
 
-Then you can execute the cells to run the platform.
+## Week 1
+files: ingestion.ipynb
+Just run the cells to ingest the datasets and store them into delta tables
+
+## Week 2
+files: Week2.ipynb
+Contains queries, data products, and benchmark code
 
 - To run the queries, simply run the cells. Do not forget to run the ones that load the dataset. The dataset can be obtained by following intructions from week 1
 - To generate the analytical data products, run the cells in the section "Making analytical data objects"
 - To reproduce the benchmark results, run the cells in order until the "Evaluate platform" where the benchmarks are.
+
+## Week 3
+files: week3_task1.ipynb , week3_task2.ipynb, generate_updates.py
+
+-  Use generate_updates.py to generate the extra datasets.
+-  Run week3_task1.ipynb to update the datasets with the new data. This will also create a json file pipeline_status.json that is used in the framework. If you want to re-run the whole code make sure to delete this file and generate a new one for a fresh test
+- For task 2, run week3_task2
