@@ -48,8 +48,11 @@ Contains queries, data products, and benchmark code
 - To reproduce the benchmark results, run the cells in order until the "Evaluate platform" where the benchmarks are.
 
 ## Week 3
-files: week3_task1.ipynb , week3_task2.ipynb, generate_updates.py
+files: week3.ipynb, generate_updates.py
 
 -  Use generate_updates.py to generate the extra datasets(Run `python generate_updates.py`).
--  Run week3_task1.ipynb to update the datasets with the new data. This will also create a json file pipeline_status.json that is used in the framework. If you want to re-run the whole code make sure to delete this file and generate a new one for a fresh test
--  For task 2, run week3_task2 
+-  For task 1, Run week3.ipynb to update the datasets with the new data. This will also create a json file pipeline_status.json that is used in the framework. If you want to re-run the whole code make sure to delete this file and generate a new one for a fresh test
+-  For task 2, the refresh of analytic dataproducts, run the cells under the makrdown cell containign the text "Week3 task 2" until reaching the markdown cell for task 3
+- For task 3, to run monitoring, run all cells under the markdown cell containing "Task 3"
+- For task 4, the corresponding code is generally scattered across teh cells for various other tasks such as task 1 and task 3. The only other code related to task 4 that has to be run as well is the code cell below the markdown cell that contains "4 Data validation framework" 
+- For task 5, it is necessary to run a cell before task 2 begins as well as the final cell in the notebook (under Platform Evaluation)
