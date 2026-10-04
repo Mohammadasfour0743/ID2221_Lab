@@ -64,4 +64,4 @@ files: week4.ipynb, ml_pipeline_from_scratch.py
 - For task 1, run all cells from start until reaching the markdown cell where task 2 starts
 - For task 2, run al cells until reaching the markdown cel which signifies start of task 3
 - For task 3 run all cells until reaching the markdown cell which says "Evaluate the role of data engineering"
-- For task 4, run the cell below the just mentioned markdown cell which says "Evaluate the role of data engineering" 
+- For task 4, run the cell below the just mentioned markdown cell which says "Evaluate the role of data engineering". It calls necessary code from ml_pipeline_from_scratch.py
