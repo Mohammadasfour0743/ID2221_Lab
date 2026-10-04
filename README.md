@@ -56,3 +56,12 @@ files: week3.ipynb, generate_updates.py
 - For task 3, to run monitoring, run all cells under the markdown cell containing "Task 3"
 - For task 4, the corresponding code is generally scattered across teh cells for various other tasks such as task 1 and task 3. The only other code related to task 4 that has to be run as well is the code cell below the markdown cell that contains "4 Data validation framework" 
 - For task 5, it is necessary to run a cell before task 2 begins as well as the final cell in the notebook (under Platform Evaluation)
+
+## Week 4
+
+files: week4.ipynb, ml_pipeline_from_scratch.py
+
+- For task 1, run all cells from start until reaching the markdown cell where task 2 starts
+- For task 2, run al cells until reaching the markdown cel which signifies start of task 3
+- For task 3 run all cells until reaching the markdown cell which says "Evaluate the role of data engineering"
+- For task 4, run the cell below the just mentioned markdown cell which says "Evaluate the role of data engineering" 
